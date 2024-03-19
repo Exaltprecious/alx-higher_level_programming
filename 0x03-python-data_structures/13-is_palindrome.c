@@ -18,7 +18,7 @@ int is_palindrome(listint_t **head)
 
     if (*head == NULL)
         return (1);
-
+    
     start = *head;
     len = listint_len(start);
     len_cyc = len * 2;
@@ -37,7 +37,7 @@ int is_palindrome(listint_t **head)
 }
 
 /**
- * * get_nodeint_at_index - Gets a node from a linked list
+  * get_nodeint_at_index - Gets a node from a linked list
   * @head: The head of the linked list
   * @index: The index to find in the linked list
   *
@@ -48,8 +48,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *current = head;
 	unsigned int iter_times = 0;
 
-	if (head)
-	{
+	if (head){
 		while (current != NULL)
 		{
 			if (iter_times == index)
@@ -68,10 +67,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
   * @h: The linked list to count
   *
   * Return: Number of elements in the linked list
-  */
-size_t listint_len(const listint_t *h)
+  */size_t listint_len(const listint_t *h)
 {
-
+	size_t listint_len(const listint_t *h)
+{
 	int lenght = 0;
 
 	while (h != NULL)
