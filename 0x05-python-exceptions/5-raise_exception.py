@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
 def raise_exception():
-    raise TypeError("Type Error")
-
-if __name__ == "__main__":
-    raise_exception()
+    """
+    A fuction that raises a type exception
+    """
+    raise TypeError("Invalid type")
