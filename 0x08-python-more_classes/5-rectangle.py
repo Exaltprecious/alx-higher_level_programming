@@ -20,8 +20,7 @@ class Rectangle:
         """Get/set the width of the Rectangle."""
         return self.__width
 
-
-@width.setter
+    @width.setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -42,8 +41,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-
-def area(self):
+    def area(self):
         """Return the area of the Rectangle."""
         return (self.__width * self.__height)
 
@@ -67,9 +65,12 @@ def area(self):
                 rect.append("\n")
         return ("".join(rect))
 
-
     def __repr__(self):
         """Returning the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
+
+    def __del__(self):
+        """Print a message for all and every deletion of a Rectangle."""
+        print("Bye rectangle...")
